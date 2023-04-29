@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           web-material
+version:        0.1
+synopsis:       At your service.
+description:    At your service..
+category:       Web
+author:         Tristan Cacqueray
+maintainer:     tdecacqu@redhat.com
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    CHANGELOG.md
+    data/material.js.gz
+    data/material.js.map.gz
+
+library
+  exposed-modules:
+      Material
+  other-modules:
+      Paths_web_material
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+    , lucid
+    , xstatic-th
+  default-language: GHC2021

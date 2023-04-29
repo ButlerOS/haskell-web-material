@@ -1,0 +1,19 @@
+name: web-material
+version: 0.1
+synopsis: At your service.
+description: At your service..
+author: Tristan Cacqueray
+maintainer: tdecacqu@redhat.com
+language: GHC2021
+category: Web
+extra-source-files:
+  - CHANGELOG.md
+  - data/*.gz
+
+dependencies:
+  - base
+  - xstatic-th
+  - lucid
+
+library:
+  source-dirs: src

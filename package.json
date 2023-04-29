@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@material/web": "^1.0.0-pre.7"
+  },
+  "scripts": {
+    "bundle": "esbuild ./src/index.js --bundle  --sourcemap --outfile=./data/material.js --format=esm --minify && gzip -9 ./data/material.js ./data/material.js.map"
+  }
+}
